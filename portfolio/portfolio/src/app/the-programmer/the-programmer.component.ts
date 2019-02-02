@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; 
 
 @Component({
   selector: 'app-the-programmer',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./the-programmer.component.css']
 })
 export class TheProgrammerComponent implements OnInit {
+  projects: [];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getProjects() {
+
   }
 
 }
