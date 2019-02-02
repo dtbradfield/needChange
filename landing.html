@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--Only for using bootstrap, I don't use jquery anywhere else that I can think of (unless it is by concept alone, I will use typescript when I switch to angular)-->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--  I *have* to include jquery and popper on this from a url for bootstrap to work.  -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!--  While my other projects built with the MEAN stack will have bootstrap installed,
+              I am wanting to just run it from a url for this landing page so it looks good and loads quickly-er-ish.   -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="landing.css">
-        <title>DTBradfield's Professional Portfolio</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DTBradfield's Professional Portfolio Landing Page</title>
         <meta charset="utf-8"/>
         <meta name="description" content="Donald Taylor Bradfield made a personal portfolio to display projects, and also the home of the exclusive LySurge social app that he solely created."/>
         <meta name="author" content="Donald Taylor Bradfield"/>
@@ -15,13 +21,40 @@
     </head>
     <body>
         <header>
-            <nav></nav>            
+            <!--  Thought about doing a nav bar here, but meh. It's just a landing page designed to go
+                    straight to either page. These pages will then be PWAs with their own navs.  -->
         </header>
         <main>
-            <h1>Welcome to Donald Taylor Bradfield's Professional Portfolio and self-made social site, LySurge.</h1>
+            <h3>Welcome to Donald Taylor Bradfield's Professional Portfolio and self-made social site, LySurge.</h3>
+            <hr>
+            <div class="split left">
+                <div class="centered">
+                    <a href="#"><img src="https://i.imgur.com/y8SymGL.png" alt="Donald's Logo" 
+                        height="140em" width="auto"/></a>
+                    <h5>
+                        DTBradfield's Professional Portfolio
+                    </h5>
+                    <p>The Programmer. The Writer. The Man.</p>
+                </div>
+            </div>
+            <div class="split right">
+                <div class="centered">
+                    <a href="#"><img src="https://i.imgur.com/WomOPXz.png" 
+                        alt="lysurge logo"/></a>
+                    <h5>
+                        LySurge
+                    </h5>
+                    <p>For the exclusive LySurge community. Invite only.</p>
+                </div>
+            </div>         
         </main>
         <footer>
 
         </footer>
     </body>
 </html>
+
+
+<form action="https://www.google.com" target="blank">
+    <input type="submit" class="btn btn-secondary" value="LySurge" />
+</form>
