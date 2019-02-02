@@ -57,4 +57,15 @@ Routes
 
 require('./server/api')(app, config);
 
-if (process.env.NODE_ENV !== 'dev')
+if (process.env.NODE_ENV !== 'dev') {
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(__dirname, '/dist/index.html'));
+    });
+}
+
+
+/* 
+Server
+*/
+
+app.listen(port, () => console.log('Server running on localhost:' + port));
