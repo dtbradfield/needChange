@@ -7,13 +7,17 @@ import { TheProgrammerComponent } from './the-programmer/the-programmer.componen
 import { TheManComponent } from './the-man/the-man.component';
 import { TheWriterComponent } from './the-writer/the-writer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TheProgrammerComponent,
     TheManComponent,
-    TheWriterComponent
+    TheWriterComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
