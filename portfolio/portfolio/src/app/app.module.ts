@@ -7,20 +7,22 @@ import { TheProgrammerComponent } from './the-programmer/the-programmer.componen
 import { TheManComponent } from './the-man/the-man.component';
 import { TheWriterComponent } from './the-writer/the-writer.component';
 import { AppRoutingModule } from './app-routing.module';
+import { StarredConfigComponent } from './starred-config/starred-config.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TheProgrammerComponent,
     TheManComponent,
-    TheWriterComponent
+    TheWriterComponent,
+    StarredConfigComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

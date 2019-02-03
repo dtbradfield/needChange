@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core'; 
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-the-programmer',
@@ -13,10 +14,6 @@ export class TheProgrammerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-  getProjects() {
-
   }
 
   onRevealCodeProjects() {
