@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TheProgrammerComponent implements OnInit {
   projects: [];
   revealProjects: boolean = false;
+  clickMessage: string = 'reveal';
 
   constructor() { }
 
@@ -20,6 +21,9 @@ export class TheProgrammerComponent implements OnInit {
 
   onRevealCodeProjects() {
     this.revealProjects = !this.revealProjects;
+    if ( this.revealProjects ) {
+      this.clickMessage = 'hide'
+    } else { this.clickMessage = 'reveal' }
   }
 
 }
