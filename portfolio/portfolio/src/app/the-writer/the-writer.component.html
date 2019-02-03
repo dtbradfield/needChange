@@ -1,1 +1,12 @@
-<h2>The Writer</h2>
+<div class="container">
+    <h2>theWriter</h2>
+    <button class="btn" (click)="onRevealCodeProjects()" style="color: #d5ecd7">
+        Click to Reveal Dynamic Content
+    </button>       
+    <div *ngIf="revealProjects" style="overflow: scroll" class="scrollbar">
+        Copy paste copy paste
+        Copy paste copy paste
+        Copy paste copy paste
+        Copy paste copy paste
+    </div>
+</div>

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TheProgrammerComponent implements OnInit {
   projects: [];
+  revealProjects: boolean = false;
 
   constructor() { }
 
@@ -15,6 +16,10 @@ export class TheProgrammerComponent implements OnInit {
 
   getProjects() {
 
+  }
+
+  onRevealCodeProjects() {
+    this.revealProjects = !this.revealProjects;
   }
 
 }
