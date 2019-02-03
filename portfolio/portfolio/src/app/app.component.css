@@ -8,19 +8,19 @@
 
 .left {
     left: 0;
-    background-color: #9d9b8e;
+    background-color: rgb(157, 155, 142, 0.95);
     color: #142a35;
 }
 
 .middle {
     left: 33.333333333%;
-    background-color: #142a35;
+    background-color: rgb(20, 42, 53, 0.95);
     color: #d5ecd7;
 }
 
 .right {
     left: 66.666666666%;
-    background-color: #f98a2c;
+    background-color: rgb(249, 138, 44);
     color: #142a35;
 }
 
