@@ -1,12 +1,22 @@
 <div class="container">
     <h2>theProgrammer</h2>
-
+    <hr>
     <button class="btn" (click)="onRevealCodeProjects()">
-        Click to {{ clickMessage }} Dynamic Content
+        Click to {{ clickMessage }} Github Projects
     </button>
 
-    <div *ngIf="revealProjects" class="scrollbar">
-        Copy paste copy paste
+    <hr>
+
+    <div *ngIf="revealProjects" class="githubList">
+        <div *ngFor="let project of projects; let i = index">
+            <br />
+            <a href="{{ projects[i].html_url }}" target="blank" class="githubProjects">
+                <h5>{{ projects[i].name }}</h5>
+                <h6>{{ projects[i].owner.login }}</h6>
+                <p>{{ projects[i].description }}</p>
+            </a>
+            <hr>
+        </div>
     </div>
 </div>
 

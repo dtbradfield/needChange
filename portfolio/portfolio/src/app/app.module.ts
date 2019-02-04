@@ -8,6 +8,7 @@ import { TheManComponent } from './the-man/the-man.component';
 import { TheWriterComponent } from './the-writer/the-writer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StarredConfigComponent } from './starred-config/starred-config.component';
+import { StarredConfigService } from './starred-config/starred-config.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { StarredConfigComponent } from './starred-config/starred-config.componen
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [AppComponent],
+  providers: [StarredConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -8,7 +8,6 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio';
-  private apiUrl = "https://api.github.com/users/dtbradfield/starred";
   
   constructor() {
   }

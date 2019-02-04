@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StarredConfigService } from '../starred-config/starred-config.service';
+import { IStarred } from '../starred-config/starred-interface';
 
 
 @Component({
@@ -7,13 +9,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./the-programmer.component.css']
 })
 export class TheProgrammerComponent implements OnInit {
-  projects: [];
+  public projects: IStarred;
   revealProjects: boolean = false;
   clickMessage: string = 'reveal';
 
-  constructor() { }
+
+  constructor(private _starredService: StarredConfigService) { }
 
   ngOnInit() {
+    this._starredService.getConfig()
+      .subscribe(data => {
+        this.projects = data;
+      });
   }
 
   onRevealCodeProjects() {
