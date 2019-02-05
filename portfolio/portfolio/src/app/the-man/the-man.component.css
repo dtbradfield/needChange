@@ -9,3 +9,11 @@
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+a {
+    color: rgb(20, 42, 53);
+}
+
+img {
+    border-radius: 17px;
+}
