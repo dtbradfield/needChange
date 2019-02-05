@@ -10,18 +10,21 @@
     left: 0;
     background-color: rgb(157, 155, 142, 0.95);
     color: #142a35;
+    padding-right: 1%;
 }
 
 .middle {
     left: 33.333333333%;
     background-color: rgb(20, 42, 53, 0.95);
-    color: #d5ecd7;
+    color: rgb(249, 138, 44);
+    padding-right: 1%;
 }
 
 .right {
     left: 66.666666666%;
-    background-color: rgb(249, 138, 44);
+    background-color: rgb(249, 138, 44, 0.95);
     color: #142a35;
+    padding-right: 1%;
 }
 
 .navbar {
